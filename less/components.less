@@ -1,0 +1,111 @@
+// -------------------------------------------------------------------------
+// COMMENTS
+// -------------------------------------------------------------------------
+
+// This sheet: Styling for components like buttons, forms, labels, navbar, tables, etc.
+
+// -------------------------------------------------------------------------
+// BUTTONS
+// -------------------------------------------------------------------------
+
+// Button styles to start off with
+.btn {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 15px 20px;
+    color: white;
+    font-family: @font-family-sans-serif;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    text-align: center;
+    background-color: @btn-color;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.btn:hover,
+  &:focus {
+    color: @btn-color-hover;
+    text-decoration: none;
+  }
+
+.btn:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+  }
+
+// -------------------------------------------------------------------------
+// FORMS
+// -------------------------------------------------------------------------
+
+// Normalize non-control form elements
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: @line-height-computed;
+    font-size: (@font-size-base * 1.5);
+    line-height: inherit;
+    border: 0;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+// Reset height for `textarea`s
+  textarea& {
+    height: auto;
+  }
+
+
+// Normalize form controls
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9; /* IE8-9 */
+  line-height: normal;
+}
+
+// Set the height of select and file controls to match text inputs
+input[type="file"] {
+  display: block;
+}
+
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+// Fix optgroup Firefox bug per https://github.com/twbs/bootstrap/issues/7611
+select optgroup {
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+}
+
+// Fix for Chrome number input
+// Setting certain font-sizes causes the `I` bar to appear on hover of the bottom increment button.
+// See https://github.com/twbs/bootstrap/issues/8350 for more.
+input[type="number"] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    height: auto;
+  }
+}
