@@ -18,7 +18,8 @@
     font-size: @font-size-base;
     line-height: @line-height-base;
     text-align: center;
-    background-color: @btn-color;
+    text-decoration: none;
+    background: @btn-color;
     vertical-align: middle;
     cursor: pointer;
     border: 1px solid transparent;
@@ -108,4 +109,63 @@ input[type="number"] {
   &::-webkit-inner-spin-button {
     height: auto;
   }
+}
+
+// -------------------------------------------------------------------------
+// SLIDER
+// -------------------------------------------------------------------------
+
+.slider {
+    position: relative;
+    overflow: auto;
+    color: white;
+    text-align: center;
+}
+
+.slider ul {
+    list-style-type:none !important;
+    padding: 0;
+}
+
+.slider li {
+    list-style: none !important;
+    height: 420px;
+}
+
+.slider ul li {
+    float: left;
+    padding-top: 280px;
+}
+
+#left-arrow, #right-arrow {
+    margin-top:340px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 350px;
+}
+
+.slider-main a {
+    color: white;
+}
+
+#left-arrow {
+    background-position: 0 0;
+    left: 40px;
+}
+
+#right-arrow {
+    background-position: 0 0;
+    right: 40px;
+}
+
+// -------------------------------------------------------------------------
+// SECTION 2
+// -------------------------------------------------------------------------
+
+#section-2 {
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    padding-top: 120px;
+    color: white;
 }
