@@ -1,0 +1,205 @@
+// -------------------------------------------------------------------------
+// COMMENTS
+// -------------------------------------------------------------------------
+
+// This sheet: Styling for layout sections like the header, nav, main body, and footer.
+
+// -------------------------------------------------------------------------
+// HEADERS 
+// -------------------------------------------------------------------------
+
+#main-header {
+    background: @black-20;
+    padding: 2em 0 5em 0;
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+}
+
+// -------------------------------------------------------------------------
+// BOTH CALLS TO ACTION 
+// -------------------------------------------------------------------------
+
+.call-to-action {
+    background: @black-10;
+    padding: 1em 0 1em 0;
+}
+
+.cta-container {
+    width: 90%;
+	max-width: 600px;
+	margin: auto;
+}
+
+.call-to-action p {
+    float: left;
+}
+
+.call-to-action a {
+    float: right;
+}
+
+// -------------------------------------------------------------------------
+// MACBOOK SECTION 
+// -------------------------------------------------------------------------
+
+#macbook {
+    text-align: center;
+    padding: 4em 0 0 0;
+}
+
+#macbook img {
+    margin: 2em 0 0 0;
+    width: 80%;
+}
+
+// -------------------------------------------------------------------------
+// SUMMARY SECTION 
+// -------------------------------------------------------------------------
+
+#summary {
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    padding: 4em 0 3em 0;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+}
+
+// -------------------------------------------------------------------------
+// THREE IMAGES SECTION 
+// -------------------------------------------------------------------------
+
+#three-images {
+    padding: 4em 0 3em 0;
+}
+
+.img-circle-section {
+    .column(4);
+    text-align: center;
+}
+
+#three-images img {
+    border-radius: 50%;
+}
+
+// -------------------------------------------------------------------------
+// SLIDER SECTION
+// -------------------------------------------------------------------------
+
+#slider-main {
+    padding: 4em 0 3em 0;
+    color: white;
+}
+
+.slider {
+    position: relative;
+    overflow: auto;
+    color: white;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+}
+
+.slider ul {
+    list-style-type:none !important;
+    padding: 0;
+}
+
+.slider li {
+    list-style: none !important;
+    height: 450px;
+}
+
+.slider ul li {
+    float: left;
+    padding-top: 270px;
+}
+
+.slider h2, .slider p {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#left-arrow, #right-arrow {
+    position: absolute;
+    z-index: 100;
+    margin-top: 320px;
+}
+
+#left-arrow {
+    background-position: 0 0;
+    left: 40px;
+}
+
+#right-arrow {
+    background-position: 0 0;
+    right: 40px;
+}
+
+#left-arrow a, #right-arrow a {
+    color: white;
+}
+
+// -------------------------------------------------------------------------
+// LIST SECTION
+// -------------------------------------------------------------------------
+
+#list {
+    padding: 4em 0 5em 0;
+}
+
+#list article {
+    margin:1em 0 0 0;
+}
+
+#list i {
+    position: absolute;
+}
+
+#list h3 {
+    margin: 0 0 0 70px;
+}
+
+#list p {
+    margin: 0 0 0 70px;
+}
+
+.list-row {
+    .row(12);
+    margin: 3em 0 0 0;
+}
+
+.list-item {
+    .column(6,12);
+    
+}
+
+// -------------------------------------------------------------------------
+// FOOTER 
+// -------------------------------------------------------------------------
+
+footer {
+    padding: 2em 0 2em 0;
+    height: 15px;
+}
+
+.social-boat {
+    float: left;
+}
+
+.social-boat div {
+    display: inline-block;
+}
+
+#footer-text {
+    float: right;
+}
+
+#footer-text p {
+    margin: 0;
+}

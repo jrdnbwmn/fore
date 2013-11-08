@@ -2,23 +2,29 @@
 // COMMENTS
 // -------------------------------------------------------------------------
 
-// This sheet: My grid system.
+/*
 
-// My grid is based on the Semantic Grid System (with a few modifications)
-// found here: http://semantic.gs/
-// and explained beautifully here: http://coding.smashingmagazine.com/2011/08/23/the-semantic-grid-system-page-layout-for-tomorrow/
+This sheet: My grid system.
 
-// How to use:
+My grid is based on the Semantic Grid System (with a few modifications)
+found here: http://semantic.gs/
+and explained beautifully here: http://coding.smashingmagazine.com/2011/08/23/the-semantic-grid-system-page-layout-for-tomorrow/
 
-// 1. Specify @column-width, @gutter-width, & @columns below.
+How to use:
 
-// 2. Apply spans to each section in CSS, like this:
-// article { .span(9); }
-// section { .span(3); }
-// @media screen and (max-width: 720px) {
-// 	    article { .span(12); }
-// 	    section { .span(12); }
-// }
+1. Specify @column-width, @gutter-width, & @columns below.
+
+2. Apply spans to each section in CSS, like this:
+article { .column(9); }
+section { .column(3); }
+@media screen and (max-width: 720px) {
+	    article { .column(12); }
+	    section { .column(12); }
+}
+
+3. For using rows, refer to "Nested Columns" on http://semantic.gs/
+
+*/
 
 // -------------------------------------------------------------------------
 // MODIFY
@@ -36,7 +42,6 @@
     width: 90%;
 	max-width: 1000px;
 	margin: auto;
-    .cf;
 }
 
 // -------------------------------------------------------------------------
@@ -58,7 +63,7 @@ body {
 // CLASSES
 // -------------------------------------------------------------------------
 
-.span(@x,@columns:@columns) {
+.column(@x,@columns:@columns) {
 	display: inline;
 	float: left;
 	width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
