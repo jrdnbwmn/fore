@@ -19,18 +19,38 @@
     text-align: center;
     font-weight: 400;
     text-decoration: none;
-    background: @btn-color;
+    text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+    background: #79a94b;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: 2px solid #689240;
     border-radius: 5px;
     white-space: nowrap;
+    -webkit-filter: drop-shadow(0 1px 1px rgba(0,0,0,.1));
+    -moz-filter: drop-shadow(0 1px 1px rgba(0,0,0,.1));
+    -ms-filter: drop-shadow(0 1px 1px rgba(0,0,0,.1));
+    -o-filter: drop-shadow(0 1px 1px rgba(0,0,0,.1));
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,.1));
+    -webkit-transition: background-color .2s ease-out;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: initial;
+    -moz-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    -ms-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
 }
 
 .btn:hover,
   &:focus {
-    color: @btn-color-hover;
     text-decoration: none;
+    background: #689240;
+    color: white;
   }
 
 .btn:active,

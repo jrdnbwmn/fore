@@ -9,13 +9,54 @@
 // -------------------------------------------------------------------------
 
 #main-header {
-    background: @black-20;
-    padding: 2em 0 5em 0;
+    padding: 3em 0 5em 0;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+    color: white;
+    position: relative;
+    background: #000;
+    /*
+    background: -moz-linear-gradient(90deg,  #ff8532 0%, #ba4b00 100%); /* FF3.6+ *
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ff8532), color-stop(100%,#ba4b00)); /* Chrome,Safari4+ *
+    background: -webkit-linear-gradient(90deg,  #ff8532 0%,#ba4b00 100%); /* Chrome10+,Safari5.1+ *
+    background: -o-linear-gradient(90deg,  #ff8532 0%,#ba4b00 100%); /* Opera 11.10+ *
+    background: -ms-linear-gradient(90deg,  #ff8532 0%,#ba4b00 100%); /* IE10+ *
+    background: linear-gradient(0deg,  #ff8532 0%,#ba4b00 100%); /* W3C */
+}
+
+#main-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+#main-header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/evergreen.jpg) repeat center center;
+    opacity: .6;
+}
+
+#main-header h1 {
+    margin: .9em 0 .5em 0;
+    letter-spacing: 8px;
+}
+
+#main-header p {
+    font-weight: 700;
 }
 
 header {
     text-align: center;
+}
+
+.body-header {
+    margin:0 0 4em 0;
 }
 
 // -------------------------------------------------------------------------
@@ -23,8 +64,9 @@ header {
 // -------------------------------------------------------------------------
 
 .call-to-action {
-    background: @black-10;
+    background: #EDEFEE;
     padding: 1em 0 1em 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .cta-container {
@@ -41,6 +83,10 @@ header {
     float: right;
 }
 
+.cta-2 {
+    border-bottom: none;
+}
+
 // -------------------------------------------------------------------------
 // MACBOOK SECTION 
 // -------------------------------------------------------------------------
@@ -51,7 +97,7 @@ header {
 }
 
 #macbook img {
-    margin: 2em 0 0 0;
+    margin: 5em 0 0 0;
     width: 80%;
 }
 
@@ -61,12 +107,73 @@ header {
 
 #summary {
     width: 100%;
-    height: 260px;
     text-align: center;
-    padding: 4em 0 3em 0;
+    position: relative;
+    padding: 4em 0 6em 0;
     color: white;
     box-shadow: 0 1px 2px rgba(0,0,0,.25);
     text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+    background: #AA7742; /* Old browsers 
+    background: -moz-linear-gradient(90deg,  #6d869d 0%, #425362 100%); /* FF3.6+ *
+    background: -webkit-gradient(linear, top center, bottom center, color-stop(0%,#6d869d), color-stop(100%,#425362)); /* Chrome,Safari4+ *
+    background: -webkit-linear-gradient(90deg,  #6d869d 0%,#425362 100%); /* Chrome10+,Safari5.1+ *
+    background: -o-linear-gradient(90deg,  #6d869d 0%,#425362 100%); /* Opera 11.10+ *
+    background: -ms-linear-gradient(90deg,  #6d869d 0%,#425362 100%); /* IE10+ *
+    background: linear-gradient(0deg,  #6d869d 0%,#425362 100%); /* W3C */
+}
+
+#summary .container {
+    position: relative;
+    z-index: 2;
+}
+
+#summary:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/summary.jpg) repeat center center;
+    opacity: .3;
+}
+
+#summary p {
+    margin: 0 0 2.7em 0;
+}
+
+#summary a, .slider a {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#summary .btn, .slider .btn {
+    background: transparent;
+    border: 2px solid #FCFCFC;
+    -webkit-filter: drop-shadow(0 1px 1px rgba(0,0,0,.3));
+    -moz-filter: drop-shadow(0 1px 1px rgba(0,0,0,.3));
+    -ms-filter: drop-shadow(0 1px 1px rgba(0,0,0,.3));
+    -o-filter: drop-shadow(0 1px 1px rgba(0,0,0,.3));
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,.3));
+    -webkit-transition: background-color .2s ease-out;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: initial;
+    -moz-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    -ms-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
+}
+
+#summary .btn:hover, .slider .btn:hover {
+    background: rgba(255,255,255,.2);
+    color: white;
 }
 
 // -------------------------------------------------------------------------
@@ -74,16 +181,17 @@ header {
 // -------------------------------------------------------------------------
 
 #three-images {
-    padding: 4em 0 3em 0;
+    padding: 4em 0 6em 0;
 }
 
-.img-circle-section {
+.img-circle-div {
     .column(4);
     text-align: center;
 }
 
 #three-images img {
     border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
 // -------------------------------------------------------------------------
@@ -107,22 +215,31 @@ header {
 .slider ul {
     list-style-type:none !important;
     padding: 0;
+    margin: 0;
 }
 
 .slider li {
     list-style: none !important;
-    height: 450px;
+    height: 540px;
+    position: relative;
 }
 
 .slider ul li {
     float: left;
-    padding-top: 270px;
+    padding-top: 160px;
 }
 
 .slider h2, .slider p {
     width: 90%;
     max-width: 1000px;
-    margin: auto;
+}
+
+.slider h2 {
+     margin: .9em auto .9em auto;
+}
+
+.slider p {
+     margin: 0em auto 2.7em auto;
 }
 
 #left-arrow, #right-arrow {
@@ -143,6 +260,60 @@ header {
 
 #left-arrow a, #right-arrow a {
     color: white;
+    border-bottom: none;
+}
+
+// Slides ------------------------------
+
+.slide h2, .slide p, .slide a {
+    position: relative;
+    z-index: 2;
+}
+
+.slide:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#slide1 {
+    background: #547293;
+}
+
+#slide1:after {
+    background: url(../images/slide1.jpg) repeat center center;
+    opacity: .3;
+}
+
+#slide2 {
+    background: #C1B04D;
+}
+
+#slide2:after {
+    background: url(../images/slide2.jpg) repeat center center;
+    opacity: .3;
+}
+
+#slide3 {
+    background: #89587E;
+}
+
+#slide3:after {
+    background: url(../images/slide3.jpg) repeat center center;
+    opacity: .3;
+}
+
+#slide4 {
+    background: #AA7742;
+}
+
+#slide4:after {
+    background: url(../images/slide4.jpg) repeat center center;
+    opacity: .3;
 }
 
 // -------------------------------------------------------------------------
@@ -150,11 +321,7 @@ header {
 // -------------------------------------------------------------------------
 
 #list {
-    padding: 4em 0 5em 0;
-}
-
-#list article {
-    margin:1em 0 0 0;
+    padding: 4em 0 4em 0;
 }
 
 #list i {
@@ -162,7 +329,7 @@ header {
 }
 
 #list h3 {
-    margin: 0 0 0 70px;
+    margin: 0 0 20px 70px;
 }
 
 #list p {
@@ -171,12 +338,22 @@ header {
 
 .list-row {
     .row(12);
-    margin: 3em 0 0 0;
+    margin: 3em 0 3em 0;
+    padding: 0 0 3em 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-row:last-child {
+    border-bottom: 0;
+    padding:0;
 }
 
 .list-item {
     .column(6,12);
-    
+}
+
+hr {
+    color: #ddd;
 }
 
 // -------------------------------------------------------------------------
@@ -184,8 +361,8 @@ header {
 // -------------------------------------------------------------------------
 
 footer {
-    padding: 2em 0 2em 0;
-    height: 15px;
+    padding: 3em 0 3em 0;
+    height: 25px;
 }
 
 .social-boat {

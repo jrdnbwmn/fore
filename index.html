@@ -74,7 +74,7 @@
         
         
         <!-- Summary Section -->
-        <section id="summary" style="background-image: url(images/section2.jpg);">
+        <section id="summary">
             <div class="container">
                 <h2>What makes Fore so great?</h2>
                 <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
@@ -86,22 +86,22 @@
         <!-- Three Images Section -->
         <section id="three-images">
             <div class="container">
-                <header>
+                <header class="body-header">
                     <h2>You're probably feeling really inspired.</h2>
                     <p>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
                 </header>
                 <article class="cf">
-                    <div class="img-circle-section">
+                    <div class="img-circle-div">
                         <img src="images/circle1.jpg"/>
                         <h3>Morbi in sem quis dui</h3>
                         <p>Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
                     </div>
-                    <div class="img-circle-section">
+                    <div class="img-circle-div">
                         <img src="images/circle2.jpg"/>
                         <h3>Nam nulla quam, gravida non</h3>
                         <p>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices tem.</p>
                     </div>
-                    <div class="img-circle-section">
+                    <div class="img-circle-div">
                         <img src="images/circle3.jpg"/>
                         <h3>Suspendisse commodo</h3>
                         <p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit.</p>
@@ -125,17 +125,25 @@
             </div>
             <div class="slider">
                 <ul>
-                    <li style="background-image: url(images/sliderone.jpg);">
+                    <li class="slide" id="slide1">
                         <h2>This is a responsive slider.</h2>
-                        <p>It comes from https://github.com/idiot/unslider, where you'll also find issue reports (their website is out of date).</p>
+                        <p>It comes from <a href="https://github.com/idiot/unslider">Unslider</a>, where you'll also find issue reports (their website is out of date).</p>
+                        <a class="btn" href="#">Button</a>
                     </li>
-                    <li style="background-image: url(images/slidertwo.jpg);">
+                    <li class="slide" id="slide2">
                         <h2>It also adjusts for height...</h2>
                         <p>...and has keyboard support.</p>
+                        <a class="btn" href="#">Button</a>
                     </li>
-                    <li style="background-image: url(images/sliderthree.jpg);">
+                    <li class="slide" id="slide3">
                         <h2>It has touch/swipe support for mobile.</h2>
-                        <p>That javascript comes courtesy of http://stephband.info/jquery.event.swipe/.</p>
+                        <p>That javascript comes courtesy of <a href="http://stephband.info/jquery.event.swipe/">@stephband</a>.</p>
+                        <a class="btn" href="#">Button</a>
+                    </li>
+                    <li class="slide" id="slide4">
+                        <h2>Vestibulum auctor dapibus.</h2>
+                        <p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit.</p>
+                        <a class="btn" href="#">Button</a>
                     </li>
                 </ul>
             </div>
@@ -145,7 +153,7 @@
         <!-- List Section -->
         <section id="list">
             <div class="container">
-                <header>
+                <header class="body-header">
                     <h2>Aliquam erat volutpat.</h2>
                     <p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem.</p>
                 </header>
@@ -180,7 +188,7 @@
                             <h3>Quisque volutpat mattis</h3>
                             <p>Integer vitae libero ac risus egestas placerat, elementum vulputate.</p>
                         </div>
-                        <div class="list-item">
+                        <div class="list-item" id="last-item">
                             <i class="fa fa-wrench fa-2x"></i>
                             <h3>Lorem ipsum dolor</h3>
                             <p>Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.</p>
@@ -192,7 +200,7 @@
         
         
         <!-- Second call to action -->
-        <section class="call-to-action">
+        <section class="call-to-action cta-2">
             <div class="cta-container cf">
                 <p>Astounding call to action? Yeah, that's right.</p>
                 <a class="btn" href="#">Get Started →</a>
