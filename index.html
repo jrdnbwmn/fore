@@ -66,7 +66,7 @@
         <section id="macbook">
             <div class="container">
                 <h2>What's this all about?</h2>
-                <p>Fore was designed and built by <a href="http://www.jrdnbwmn.com" target="_blank">Jordan Bowman</a>. It is released for free on Papaya under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution license</a>. Use it – I hope you make millions of dollars and find a hot spouse with it.</p>
+                <p>Fore was designed and built by <a href="http://www.jrdnbwmn.com" target="_blank">Jordan Bowman</a>. It is released for free on <a href="http://eatapapaya.com">Papaya</a> under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution license</a>. Use it – I hope you make millions of dollars and find a hot spouse with it.</p>
                 <img src="images/macbookpro.png"/>
             </div>
         </section>
@@ -267,6 +267,13 @@
                     } else {
                         unslider.data('unslider')['prev']();  
                     };
+                });
+                var unslider = $('.slider').unslider();
+
+                unslider.on('movestart', function(e) {
+                    if((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY &&   e.distX > -e.distY)) {
+                        e.preventDefault();
+                    }
                 });
         });
         </script>
