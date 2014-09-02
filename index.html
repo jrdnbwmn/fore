@@ -1,40 +1,35 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html lang="en-us">
     
     <head>
         
-        <meta charset="utf-8">
+        <!-- Basics -->
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <title>Fore ~ A Responsive Template from Papaya</title>
+        <title>Fore ~ A Responsive Template from Blueberry</title>
         
         <!-- Meta -->
-        <meta name="description" content="Fore is a free, responsive front end template from Papaya, made by Jordan Bowman.">
+        <meta name="description" content="Fore is a free, responsive front end template from Blueberry, made by Jordan Bowman.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Jordan Bowman">
         <meta name="keywords" content="awesome, hott, extremely attractive, sheer brilliance">
-        
-        <!-- Google Author link -->
-        <link rel="author" href="Google+URL"/>
-
-        <!-- Favicon.ico and apple-touch-icon.png (according to Apple docs). A good tool is http://iconifier.net/ -->
-        <link rel="shortcut icon" href="assets/ico/favicon.ico">
-        <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
 
         <!-- CSS, Normalize First, minify for production -->
-        <link rel="stylesheet" type='text/css' href="less/master.css"/>
+        <link href="less/fore.css" rel="stylesheet">
         
         <!-- Import web fonts using the link tag instead of CSS @import -->
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
         
         <!-- Icons from http://fontawesome.io/ -->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+              
+        <!-- Favicon.ico and apple-touch-icon.png (according to Apple docs). A good tool is http://iconogen.com/. Place these in the root directory. -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
                 
     </head>
 
@@ -49,7 +44,7 @@
         <header id="main-header">
             <div class="container">
                 <h1>Fore</h1>
-                <p>A free responsive site template from Papaya</p>
+                <p>A free responsive site template from Blueberry</p>
             </div>
         </header>
         
@@ -62,11 +57,12 @@
             </div>
         </section>
         
+        
         <!-- Macbook Section -->
         <section id="macbook">
             <div class="container">
                 <h2>What's this all about?</h2>
-                <p>Fore was designed and built by <a href="http://www.jrdnbwmn.com" target="_blank">Jordan Bowman</a>. It is released for free on <a href="http://eatapapaya.com" target="_blank">Papaya</a> under the <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution license</a>. Use it – I hope you make millions of dollars and find a hot spouse with it.</p>
+                <p>Fore was designed and built by <a href="http://www.jrdnbwmn.com" target="_blank">Jordan Bowman</a>. It is released for free on <a href="http://eatablueberry.com" target="_blank">Blueberry</a> under the <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution license</a>. Use it – I hope you make millions of dollars and find a hot spouse with it.</p>
                 <img src="images/macbookpro.png"/>
             </div>
         </section>
@@ -211,7 +207,7 @@
         <footer>
             <div class="container">
                 <div class="social-boat">
-                    <div class="gplus">
+                    <div class="gplus" style="vertical-align: top !important;">
                         <!-- Place this tag where you want the +1 button to render. -->
                         <div class="g-plusone"></div>
 
@@ -223,12 +219,12 @@
                                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
                             })();
                         </script>
-                        </div>
-                    <div class="twitter">
+                    </div>
+                    <div class="twitter" style="vertical-align: top !important;">
                         <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                     </div>
-                    <div class="facebook">
+                    <div class="facebook" style="vertical-align: top !important; margin-top: -10px;">
                         <div id="fb-root"></div>
                         <script>(function(d, s, id) {
                             var js, fjs = d.getElementsByTagName(s)[0];
@@ -241,20 +237,17 @@
                     </div>
                 </div>
                 <div id="footer-text" class="small">
-                <p>&copy; Untitled | Photos by <a href="http://www.jrdnbwmn.com" target="_blank">Jordan Bowman</a> | Design by <a href="http://www.eatapapaya.com" target="_blank">Papaya</a></p>
+                <p>&copy; You | Photos by <a href="http://www.jrdnbwmn.com" target="_blank">Jordan Bowman</a> | Design by <a href="http://www.eatablueberry.com" target="_blank">Blueberry</a></p>
                 </div>
             </div>
         </footer>
 
 
         <!-- Reference jQuery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         
-        <!-- Reference Javascript, minify for production -->
-        <script type="text/javascript" src="js/jquery.event.move.js"></script>
-        <script type="text/javascript" src="js/jquery.event.swipe.js"></script>
-        <script type="text/javascript" src="js/unslider.js"></script>
+        <!-- Reference Javascript, minified for production -->
+        <script src="js/fore.min.js"></script>
         
         <!-- Unslider script -->
         <script>

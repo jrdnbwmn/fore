@@ -7,3 +7,9 @@ Fore is a free, responsive, pageless web template available for download. Use it
 Fore is the first free template from <a href="http://eatapapaya.com">Papaya</a>.
 
 Branches & pull requests are welcomed!
+
+Version 2:
+- A little cleanup/updating on index.html
+- Concatenate and minify JS into one file
+- Optimize/compress all images
+- Rename CSS file & fix social share alignment

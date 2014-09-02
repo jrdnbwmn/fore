@@ -1,5 +1,8 @@
-# Compiled source #
-###################
+### Generic front-end gitignore template
+# Mostly pulled from: https://gist.github.com/octocat/9257657
+# This can be a useful tool: http://www.gitignore.io/
+
+### Compiled source ###
 *.com
 *.class
 *.dll
@@ -7,8 +10,7 @@
 *.o
 *.so
 
-# Packages #
-############
+### Packages ###
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
 *.7z
@@ -20,14 +22,12 @@
 *.tar
 *.zip
 
-# Logs and databases #
-######################
+### Logs and databases ###
 *.log
 *.sql
 *.sqlite
 
-# OS or Editor files #
-######################
+### OS or Editor files ###
 .DS_Store
 .DS_Store?
 ._*
@@ -44,3 +44,9 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
+
+### Sass ###
+.sass-cache
+
+### Gulp/Node ###
+node_modules
